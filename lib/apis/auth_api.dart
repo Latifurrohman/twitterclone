@@ -2,8 +2,10 @@ import 'package:appwrite/appwrite.dart';
 import 'package:appwrite/models.dart' as model;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fpdart/fpdart.dart';
-import 'package:twitter_clone/core/core.dart';
+import 'package:twitter_clone/core/failure.dart';
 import 'package:twitter_clone/core/providers.dart';
+import 'package:twitter_clone/core/type_defs.dart';
+
 
 final authAPIProvider = Provider((ref) {
   final account = ref.watch(appwriteAccountProvider);
